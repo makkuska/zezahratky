@@ -1,0 +1,57 @@
+<div class="container"> <div class="text-center">
+    <hr>
+  <h2 class="text-center">KDE NÁS NAJDETE</h2>
+    <h4 style="color: #505050">Naše zahrada se nachází uvnitř okruhu Hejčínských in-line stezek. Není
+        tedy možné dojet autem až na zahradu. Pokud k nám budete chtít přijet
+        autem, prosím, zaparkujte na jednom z odstavných parkovištích. </h4>
+    <br />
+    <div class="row lineup-down">
+      <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+        <h4>GPS: 49°36'50.042"N, 17°14'15.591"E</h4>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <h3>Z Řepčína</h3>
+      <h5 style="color: #404040">Z parkoviště Řepčín dále pokračujte pěšky. <br />Čeká Vás 500m procházky
+        okrajem Litovelského pomoraví. <br />
+        Přejděte most, dejte se rovně <br />
+        a pak 2. odbočkou doleva. <br />
+        Naše zahrada se nachází napravo od stezky.</h5>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <h3>Z Černovíra/Lazců</h3>
+      <h5 style="color: #404040">Pokud se k nám vydáte z opačné strany, bude to mít delší, <br />asi 1200m.
+        Ale nenechte se odradit, je to příjemná procházka. Hned u parkoviště se
+        dáte doleva, <br />pak rovně a 1. odbočkou doprava. 
+        <br />Naše zahrada se nachází napravo od stezky. </h5>
+    </div>
+  </div>
+</div>
+
+    <br />
+    <div id="mapa"></div>
+
+        <script>
+          var map = L.map('mapa').setView([49.6119603, 17.2403342], 15);
+          L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+            }).addTo(map);
+
+          var LeafIcon = L.Icon.extend({
+            options: {
+              iconSize:     [30, 45],
+              iconAnchor:   [16, 50],
+              popupAnchor:  [0, -50]
+            }
+          });
+
+          var zzhIcon = new LeafIcon({iconUrl: 'logo_zzh.png'}),
+            parkIcon = new LeafIcon({iconUrl: 'logo_park.png'});
+
+          L.marker([49.6102919, 17.2349431], {icon: parkIcon}).bindPopup("parkoviště Řepčín").addTo(map);
+          L.marker([49.6140042, 17.2503819], {icon: parkIcon}).bindPopup("parkoviště Černovír-Lazce").addTo(map);
+          L.marker([49.6133506, 17.2382850], {icon: zzhIcon}).bindPopup("<strong>ZE-ZA-HRÁTKY</strong><br />").addTo(map);
+
+
+        </script>

@@ -1,0 +1,14 @@
+/* stylesheet for solanska.eu, M. Solanská 2013 */
+body {
+  padding-top: 20px;
+  background-color: #fff;
+  padding-bottom: 0px;
+  color: #000;
+}
+  
+.logo {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+

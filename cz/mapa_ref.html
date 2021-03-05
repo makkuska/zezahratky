@@ -1,0 +1,32 @@
+
+        <script>
+          var map = L.map('mapa_ref').setView([49.602, 17.244], 13);
+L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+	subdomains: 'abcd',
+	maxZoom: 19
+          }).addTo(map);
+
+          var LeafIcon = L.Icon.extend({
+            options: {
+              iconSize:     [33, 50],
+              iconAnchor:   [16, 50],
+              popupAnchor:  [0, -50]
+            }
+          });
+
+          var redIcon = new LeafIcon({iconUrl: 'logo.png'}),
+            greenIcon = new LeafIcon({iconUrl: 'logo_zel.png'});
+
+          var zzhIcon = new LeafIcon({iconUrl: 'logo_zzh.png'}),
+            parkIcon = new LeafIcon({iconUrl: 'logo_park.png'});
+
+          L.marker([49.5958672, 17.2405911], {icon: redIcon}).bindPopup("<strong>Gram</strong><br />Litovelská 2a<br />Olomouc").addTo(map);
+          L.marker([49.5902100, 17.2536814], {icon: redIcon}).bindPopup("<strong>Olomouc bez obalu</strong><br />Kateřinská 10<br />Olomouc").addTo(map);
+          L.marker([49.5958828, 17.2517442], {icon: redIcon}).bindPopup("<strong>Harmonie zdraví</strong><br />Zámečnická 3a<br />Olomouc").addTo(map);
+          L.marker([49.6102919, 17.2349431], {icon: parkIcon}).bindPopup("parkoviště Řepčín").addTo(map);
+          L.marker([49.6140042, 17.2503819], {icon: parkIcon}).bindPopup("parkoviště Černovír-Lazce").addTo(map);
+          L.marker([49.6133506, 17.2382850], {icon: zzhIcon}).bindPopup("<strong>ZE-ZA-HRÁTKY</strong><br />").addTo(map);
+
+
+        </script>

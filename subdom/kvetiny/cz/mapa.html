@@ -1,0 +1,31 @@
+<div class="text-center">
+  <h4>Pokud k nám budete chtít přijet autem, je třeba zaparkovat na záchytném parkovišti <br />pro in-line okruh v Řepčíně a zbývajících 300 m dojít pěšky.</h4>
+  <h5>
+            GPS: 49°36'50.042"N, 17°14'15.591"E</h5>
+
+</div>
+<div id="mapa"></div>
+
+<script type="text/javascript">
+  var center = SMap.Coords.fromWGS84(17.2376722, 49.6142517);
+  var sidlo = SMap.Coords.fromWGS84(17.2376722, 49.6142517);
+  var park1 = SMap.Coords.fromWGS84(17.2348592, 49.6103178);
+  var park2 = SMap.Coords.fromWGS84(17.2505447, 49.6139292);
+  var m = new SMap(JAK.gel("mapa"), center, 14);
+  m.addDefaultLayer(SMap.DEF_BASE).enable();
+    m.addDefaultControls();
+
+  var layer = new SMap.Layer.Marker();
+  m.addLayer(layer);
+  layer.enable();
+  
+  var options = {};
+
+  var sidlo_card = new SMap.Card();
+  sidlo_card.getHeader().innerHTML = "Zahrada ZE-ZA-HRÁTKY";
+  var sidlo_marker = new SMap.Marker(sidlo, "ze-za-hrátky", options);
+  sidlo_marker.decorate(SMap.Marker.Feature.Card, sidlo_card);
+  layer.addMarker(sidlo_marker);
+
+
+</script>

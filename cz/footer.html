@@ -1,0 +1,90 @@
+<footer class="modal-footer">
+  <div class="container">
+    <div class="row">
+        <div class="text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h5 id="kontakt">Kontakt</h5>
+          <p>
+              <img alt="logo telefone" class="" src=<?php echo "{$filespath}files/img/tellogo.png" ?> /> 
+              <span class="telefonnum">797 639 330</span><br/>
+                <span class="telefontime">8:00-16:00</span><br />
+          <h4><a class="email" href="mailto:info@zezahratky.cz">info@zezahratky.cz</a></h4>
+          </p>
+        </div>
+        <div class="text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <form ACTION=<?php echo "{$czpath}admin_add_mail.php" ?> METHOD="post" class="form-horizontal" role="form">
+              <input class="hidden" type="text" name="url" id="url" />
+              <h5>Nechcete přijít o žádnou novinku? </h5>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">   
+                  <div class="input-group"> <span class="input-group-addon">@</span>
+                    <input type="email" name="mail" 
+                    id="mail" size="30" maxlength="30" 
+                    class="form-control" placeholder="pro odběr zadejte email" 
+                    required />
+                  </div>
+                    <p>
+                  <div class="input-group">
+                    <input type="checkbox" name="gdpr" 
+                    id="gdpr"  
+                    class=""  
+                    required /> Souhlasím se <a href=<?php echo "{$czpath}gdpr.php" ?>>zpracováním osobních dat</a>
+                  </div>
+                    </p>
+                </div>
+                <p>
+                <div class="col-md-2 col-lg-offset-4 col-md-offset-4 col-lg-2 col-sm-4 col-xs-7 ">
+                    <input type="submit" value="Odeslat" class="btn btn-success" />
+                </div>
+                </p>
+            </form>
+        </div>
+        <div class="text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <img alt="zezahratky logo" class="zzhlogo" src=<?php echo "{$filespath}files/img/ikona_zel.png" ?> /> 
+              <br/>
+          <p>
+            <a target="_blank" href="http://facebook.com/zezahratky">
+              <img alt="facebook logo" class="" src=<?php echo "{$filespath}files/img/fblogo_2.png" ?> /> 
+            </a>&nbsp;
+            <a target="_blank" href="https://www.instagram.com/zezahratky/">
+              <img alt="instagram logo" class="" src=<?php echo "{$filespath}files/img/instalogo_2.png" ?> /> 
+            </a>
+          </p>
+        </div> 
+      </div>
+</footer>
+  <div id="paticka">
+  <div class="container">
+  <div class="row">
+    <div class="text-left col-lg-6 col-md-6 col-sm-6-col-xs-12">
+      <a href=<?php echo "{$czpath}gdpr.php" ?>>Ochrana osobních údajů</a>
+    </div>
+    <div class="text-right col-lg-6 col-md-6 col-sm-6-col-xs-12">
+      <a href="mailto:info@zezahratky.cz">&copy; <?php echo date("Y") ?> ZE-ZA-HRÁTKY</a> &nbsp;|&nbsp; 
+      <a href="mailto:magies@anolis.cz">webmaster: magies</a>
+    </div>
+    </div>
+    </p>
+  </div> <!--div paticka -->
+  </div> <!--div paticka -->
+<!--
+    <footer class="modal-footer">
+      <div id="paticka">
+        <div class="container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-left">
+          tel: <strong>+420 603 826 724</strong><br />
+          <a href="mailto:info@stzu.cz">tandler@ekolesservis.cz</a>
+        </div>
+        <div class="container col-lg-7 col-md-7 col-sm-12 col-xs-12 text-right">
+              <a href=<?php echo "{$rootpath}index.php" ?> >Nástrojárna</a>  &nbsp;|&nbsp; 
+              <a href=<?php echo "{$czpath}vybaveni.php" ?> >Strojní vybavení</a>  &nbsp;|&nbsp; 
+              <a href=<?php echo "{$czpath}galerie.php" ?> >Galerie výrobků</a> &nbsp;|&nbsp; 
+              <a class="text-left" href=<?php echo "{$czpath}kontakty.php" ?> >Kontakty</a><br />
+              <br />
+              <a class="text-right" href="mailto:tandler@ekolesservis.cz">&copy; <?php echo date("Y"); ?> LT EkoLesServis s.r.o.</a>
+              &nbsp;|&nbsp;
+              <a href="mailto:magies@anolis.cz">design&amp;code: magies</a>
+        </div>
+        <div class="container col-lg-1 col-md-1 col-sm-12 col-xs-12 text-right">
+          <a href=<?php echo "{$rootpath}index.php" ?> ><img alt="logo" src=<?php echo "{$filespath}files/img/logo_invert.png" ?> /></a>
+              <br />
+        </div>
+      </div> <!--div patička -->
+    </footer> <!-- div kontakt -->

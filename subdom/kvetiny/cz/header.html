@@ -1,0 +1,92 @@
+
+    <?php $active = "" ?>
+  <div id="navigator" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!--
+    <div id="up" class="text-right">
+      <div class="container">
+        +420 608 229 543 | <a href="mailto:info@zezahratky.cz">info@zezahratky.cz</a> | 
+            <a target="_blank" href="http://facebook.com/zezahratky">
+              <img alt="fblogo" class="" src=<?php echo "{$filespath}files/img/fblogo_up.png" ?> /> 
+            </a>
+
+      </div>
+    </div>
+    -->
+    <div class="container">
+        <div class="hidden-xs nav navbar-nav navbar-header">
+        </div>
+        <div class="visible-xs smallmenu nav navbar-nav navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href=<?php echo "{$rootpath}index.php" ?> ><img alt="logo" src=<?php echo "{$filespath}files/img/logo_nav.png" ?> />ZE-ZA-HRÁTKY</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          
+          <!--
+            <ul class="visible-xs nav navbar-nav">
+              <li class=<?php if ($name_page == "onas") { $active = "active"; } else { $active = ""; } echo '" ' . $active .'"' ?> >
+                <a href=<?php echo "{$czpath}onas.php" ?> >
+                O NÁS
+                </a>
+              </li>
+              <li class=<?php if ($name_page == "bedynky") { $active = "active"; } else { $active = ""; } echo '"blog-nav-item ' . $active .'"' ?> >
+                <a href=<?php echo "{$czpath}bedynky.php" ?> >
+                BEDÝNKY 
+                </a>
+              </li>
+              <li class=<?php if ($name_page == "reference") { $active = "active"; } else { $active = ""; } echo '"blog-nav-item ' . $active .'"' ?> >
+                <a href=<?php echo "{$czpath}reference.php" ?> >
+              REFERENCE 
+                </a>
+                <li class=<?php if ($name_page == "kontakty") { $active = "active"; } else { $active = ""; } echo '"blog-nav-item ' . $active .'"' ?> >
+                <a href=<?php echo "{$czpath}kontakty.php" ?> >
+                  KONTAKTY 
+                </a>
+              </li>
+              -->
+        </div>
+        <div class="hidden-xs collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="hidden-xs nav navbar-nav">
+              <li class=<?php if ($name_page == "") { $active = "active"; } else { $active = ""; } echo '" ' . $active .'"' ?> >
+                <a id="logo" href=<?php echo "{$rootpath}index.php" ?> >
+                <img class="navbar-brand" alt="logo" src=<?php echo "{$filespath}files/img/logo_nav.png" ?> />
+              </a>
+              </li>
+              <li class=<?php if ($name_page == "") { $active = "active"; } else { $active = ""; } echo '"navbar-brand ' . $active .'"' ?> >
+                <a href=<?php echo "{$rootpath}index.php" ?> >
+                KVĚTINY ze-za-hrátky
+              </a>
+              </li>
+            </ul>
+            <ul class="hidden-xs nav navbar-nav navbar-right">
+              <li>
+                <a href=<?php echo "#ome" ?> >
+                o mě
+                </a>
+              </li>
+              <li>
+                <a href=<?php echo "#conabizim" ?> >
+                co nabízím 
+                </a>
+              </li>
+              <li> 
+                <a href=<?php echo "#fotogalerie" ?> >
+              fotogalerie 
+                </a>
+                <li>
+              <li> 
+                <a href=<?php echo "#objednat" ?> >
+              objednat 
+                </a>
+                <li>
+                <a href=<?php echo "#kontakt" ?> >
+                 kontakt 
+                </a>
+              </li>
+        </div>
+    </div>
+  </div>
+  </div>

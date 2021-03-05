@@ -1,0 +1,246 @@
+/* stylesheet for zezahratky.cz, M. Solanská 2015 */
+body {
+  background-color: #fff;
+/*  background-image:url(../img/background.png);
+  background-image:url(../img/background_con.png);
+  */
+  padding-bottom: 0px;
+  color: #000;
+  font-size: 15px;
+}
+
+@media(min-width:1200px){
+  .container{max-width:900px}
+}
+@media(min-width:991px){
+  .container{max-width:900px}
+}
+
+.ref_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 155px;
+  width: 147px;
+  text-indent: -9999px;
+  }
+  .ref_logo:hover, .ref_logo:focus {
+  background-position: 0 -156px;
+  }
+  .ref_logo_chomout {
+  background: url(../img/ref_logo_chomout.png);
+  }
+  .ref_logo_nasgrunt {
+  background: url(../img/ref_logo_nasgrunt.png);
+  }
+  .ref_logo_panalilka {
+  background: url(../img/ref_logo_panalilka.png);
+  }
+  .ref_logo_zivazahrada {
+  background: url(../img/ref_logo_zivazahrada.png);
+  }
+  .ref_logo_zivibar {
+  background: url(../img/ref_logo_zivibar.png);
+  }
+  .ref_logo_bistrakrava {
+  background: url(../img/ref_logo_bistrakrava.png);
+  }
+  .ref_logo_rozmaryny {
+  background: url(../img/ref_logo_rozmaryny.png);
+  }
+  .ref_logo_sklizeno {
+  background: url(../img/ref_logo_sklizeno.png);
+  }
+
+#first > .container {
+  background-color: #fff;
+  /*border: 1px solid #FAEBD7;
+  margin-top: -3px;
+  */
+}
+.text-red {
+color: #c0372b;
+}
+
+  .btn-info {
+  background-color: #763458;
+    border-color:  #763400;
+  }
+  .btn-info.active, .btn-info:active, .btn-info:focus, .btn-info:hover {
+    background-color: #ff7373; 
+    border-color: #ff7373;
+  }
+  
+  .btn-default {
+    background-color: #222222;
+    border-color: #222222;
+  }
+  .btn-default.active, .btn-default:active, .btn-default:focus, .btn-default:hover {
+    background-color: #696969;
+    border-color: #222222;
+    color: #ffffff;
+  }
+.container-padding {
+  padding-bottom: 20px
+}
+#box {
+  background-color: #fff;
+  margin-top: 60px;
+/*
+  background-image:url(../img/background_con.png);
+  box-shadow:rgba(0, 0, 0, 0.9) 5px 0 20px;
+  border-radius: 4px 4px 0px 0px;
+*/
+  padding-left:0px;
+  padding-right:0px;
+}
+.img-margin {
+  margin: 40px;
+  margin-right: 120px;
+}
+h1, h2, h3, h4, h5, dl > dt {
+  font-family: Linotte-SemiBold;
+}
+dl > dt, dl> dd, #kontakt_nas {
+  font-family: Linotte-SemiBold;
+  font-weight: normal;
+  font-size: 15px;
+}
+dl > dd {
+  color: #770000;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+  text-decoration: underline;
+  color: #763458;
+}
+#kontakty  h2 {
+  padding-left: 36px;
+}
+address {
+   margin-left: -15px;
+}
+h3 {
+  font-size: 20px;
+  color: #763458;
+}
+h4 {
+  font-size: 18px;
+}
+.text-#770000 {
+  color: #770000;
+
+}
+h5 {
+  font-size: 15px;
+}
+a {
+  color: #763458;
+}
+a:active, a:hover {
+  color: #763458;
+text-decoration: underline;
+
+}
+.jumbotron {
+  background-image:url(../img/background_jumbotron.jpg);
+  margin-bottom: 0px;
+  height: 250px;
+}
+
+#index > p, #index > ul {
+  font-size: 16px;
+}
+.btn-warning {
+  background-color:#770000;
+}
+.img100{
+  width: 100%;
+}
+.img60{
+  width: 60%;
+}
+.img40{
+  width: 40%;
+}
+#logo  {
+padding:2px 5px;
+padding-left: 20px;
+}
+.page-header {
+  border-bottom-color: #FAEBD7;
+}
+  #mapa {
+    height:310px; 
+    width:100%;
+  }
+
+  #mapa_ref {
+    height:400px; 
+    width:100%;
+    margin-top:40px;
+  }
+
+  /*footer*/
+.input-group-addon  {
+  color: #000;
+}
+.modal_footer  {
+  text-align:left;
+}
+.modal-footer {
+  background-color: #363636;
+ margin-top: 0px;
+ color: #fff;
+}
+#paticka {
+  font-family: Linotte-SemiBold;
+  background-color:black;
+  text-align: right;
+  padding-top: 10px;
+  color: #763458;
+}
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+.carousel {
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+.navbar-collapse {
+ padding-left:0px;
+}
+.navbar-default .navbar-nav > li > a, .nav > li {
+  position: relative;
+  display: inline-block;
+  color: #990000;
+  color: #763458;
+  font-weight: normal;
+  font-family: Linotte-SemiBold;
+  font-size: 14px;
+}
+
+.navbar-default {
+  background-color:#faf1b8;
+  border-color:#CDC27B;
+}
+.navbar-default .navbar-brand {
+  color: #990000;
+  padding: 0px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus {
+  color: #990000;
+  border-color:#770000;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  text-decoration: underline;
+  color: #990000;
+  background-color:#faf1b8;
+}
+
